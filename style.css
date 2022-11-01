@@ -1,0 +1,213 @@
+body {
+    background: white;
+}
+
+h1 {
+    color: green;
+    margin-left: 480px;
+}
+
+#Clockcontainer {
+    margin: auto;
+    /* border: 2px solid red; */
+    margin-top: 60px;
+    height: 40vw;
+    width: 40vw;
+    background: url(/img/clock.jpg) no-repeat;
+    background-size: 100%;
+}
+
+#hour,
+#minute,
+#second {
+    position: relative;
+    background: black;
+    border-radius: 10px;
+    transform-origin: bottom;
+}
+
+#hour {
+    width: 1%;
+    height: 18%;
+    top: 15%;
+    left: 46%;
+}
+
+#minute {
+    width: 1%;
+    height: 19%;
+    top: -4%;
+    left: 46%;
+}
+
+#second {
+    width: 1%;
+    height: 18%;
+    top: -22%;
+    left: 46%;
+}
+
+
+/* Import Google font - Poppins */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body,
+.wrapper,
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    padding: 0 10px;
+    min-height: 100vh;
+    /* background: #4A98F7; */
+}
+
+.wrapper {
+    width: 440px;
+    padding: 30px 30px 38px;
+    background: #fff;
+    border-radius: 10px;
+    flex-direction: column;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper img {
+    max-width: 103px;
+}
+
+.wrapper h1 {
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0;
+}
+
+.wrapper .content {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.content.disable {
+    cursor: no-drop;
+}
+
+.content .column {
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #bfbfbf;
+    width: calc(100% / 3 - 5px);
+}
+
+.content.disable .column {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.column select {
+    width: 100%;
+    height: 53px;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 19px;
+}
+
+.wrapper button {
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 17px 0;
+    margin-top: 20px;
+    border-radius: 5px;
+    background: #4A98F7;
+}
+
+a {
+    text-decoration: none;
+}
+
+.popup {
+    margin-top: 0;
+    background-color: rosybrown;
+    width: 150px;
+    text-align: center;
+    transform: translate(-50%, -50%) scale(0.1);
+    visibility: hidden;
+}
+
+.open-popup {
+    visibility: visible;
+    margin-top: 50px;
+    height: 149px;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 0.4s, top 0.4s;
+}
+
+.popupSecond {
+    margin-top: 0px;
+    background-color: rosybrown;
+    width: 300px;
+    text-align: center;
+    transform: translate(-50%, -50%) scale(0.1);
+    visibility: hidden;
+}
+
+.open-popupSecond {
+    visibility: visible;
+    margin-top: -74px;
+    width: 155px;
+    height: 149px;
+    margin-left: 239px;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 0.4s, top 0.4s;
+}
+
+.popupThird {
+    margin-top: 0px;
+    background-color: rosybrown;
+    width: 149px;
+    text-align: center;
+    transform: translate(-50%, -50%) scale(0.1);
+    visibility: hidden;
+}
+
+.open-popupThird {
+    visibility: visible;
+    margin-top: 10px;
+    width: 151px;
+    margin-right: 0px;
+    height: 131px;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 0.4s, top 0.4s;
+}
+
+.popupFourth {
+    margin-top: 0px;
+    background-color: rosybrown;
+    width: 149px;
+    text-align: center;
+    transform: translate(-50%, -50%) scale(0.1);
+    visibility: hidden;
+}
+
+.open-popupFourth {
+    visibility: visible;
+    margin-top: -150px;
+    margin-left: 337px;
+    width: 157px;
+    height: 93px;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 0.4s, top 0.4s;
+}
